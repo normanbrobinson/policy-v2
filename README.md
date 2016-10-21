@@ -45,7 +45,33 @@ The site is built using [Jekyll](https://github.com/jekyll/jekyll "Link to More 
 
 ### Creating Content
 
-[TO DO ADD INSTRUCTIONS ABOUT CREATING NEW CONTENT]
+1.	Create a new branch in GitHub
+2.	Create a new folder to hold your content 
+a.	Be sure to start the name of the folder with a underscore
+i.	Example: _m-15-14-fitara 
+3.	Create markdown files for each section of the memo in your  folder
+a.	There is not a standard for organizing policy sections.  Generally speaking you should create a page for each major section or chapter of the policy 
+4.	Convert the content of the policy to markdown and save it in the appropriate markdown file 
+5.	Go to the _config.yml file 
+6.	Under “resources-overview” create the following code structure.
+```
+[Policy Name]:
+
+output: true
+
+permalink: /[Policy-name-URL]/:path/
+
+url: /[Policy-name-URL]/
+
+status: draft
+
+title: Policy Name
+
+githublabel: Policy Name
+``` 
+7.	Commit your changes 
+8.	Inform Matt Bailey or Thomas Romanoff that your branch is ready to be merged
+
 
 ### Configuration Options
 [TO DO EXPLAIN WHAT CONFIGURATION OPTIONS NEED TO BE SET LIKE EMAIL AND GITHUB REPO AND GOOGLE ANALYTICS SNIPPIT]
